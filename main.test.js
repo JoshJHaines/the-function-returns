@@ -18,6 +18,12 @@ function multiply(num1, num2, num3){
   prod = num1 * num2 * num3
 }
 
+function sayHi(name){
+  greeting = greeting + " " + name + "!"
+}
+// sayHi("Josh")
+// greeting
+
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
