@@ -18,6 +18,7 @@ function multiply(num1, num2, num3){
 }
 
 function sayHi(name){
+  greeting = "Hello"
   return greeting + " " + name + "!"
 }
 
