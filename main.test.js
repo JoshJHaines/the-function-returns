@@ -1,12 +1,9 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-
 let greeting = "Hello";
 let sum = 0;
 let prod = 0;
-let type = "test"
-let rem = 0
 
 function greet(addMess){
   greeting = greeting + " " + addMess
@@ -21,21 +18,20 @@ function multiply(num1, num2, num3){
 }
 
 function sayHi(name){
-  greeting = greeting + " " + name + "!"
+  return greeting + " " + name + "!"
 }
 
 function returnWhatISay(type){
-  type = type
+  return type
 }
 
 function divide(num1, num2){
-  prod = num1 / num2
+  return num1 / num2
 }
 
 function remainder(num1, num2){
-  rem = num1 % num2
+  return num1 % num2
 }
-
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
