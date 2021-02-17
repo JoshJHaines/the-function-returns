@@ -5,33 +5,33 @@ let greeting = "Hello";
 let sum = 0;
 let prod = 0;
 
-function greet(addMess){
-  greeting = greeting + " " + addMess
+function greet(addMess) {
+	greeting = greeting + " " + addMess;
 }
 
-function sumOfTwo(num1, num2){
-  sum = num1 + num2
+function sumOfTwo(num1, num2) {
+	sum = num1 + num2;
 }
 
-function multiply(num1, num2, num3){
-  prod = num1 * num2 * num3
+function multiply(num1, num2, num3) {
+	prod = num1 * num2 * num3;
 }
 
-function sayHi(name){
-  greeting = "Hello"
-  return greeting + " " + name + "!"
+function sayHi(name) {
+	greeting = "Hello";
+	return greeting + " " + name + "!";
 }
 
-function returnWhatISay(type){
-  return type
+function returnWhatISay(type) {
+	return type;
 }
 
-function divide(num1, num2){
-  return num1 / num2
+function divide(num1, num2) {
+	return num1 / num2;
 }
 
-function remainder(num1, num2){
-  return num1 % num2
+function remainder(num1, num2) {
+	return num1 % num2;
 }
 /*********************************************************************************************************************
 
@@ -42,99 +42,98 @@ function remainder(num1, num2){
  *********************************************************************************************************************/
 
 if (typeof greeting === "undefined") {
-  greeting = undefined;
+	greeting = undefined;
 }
 
 if (typeof sum === "undefined") {
-  sum = undefined;
+	sum = undefined;
 }
 
 if (typeof prod === "undefined") {
-  prod = undefined;
+	prod = undefined;
 }
 
 if (typeof greet === "undefined") {
-  greet = undefined;
+	greet = undefined;
 }
 
 if (typeof sumOfTwo === "undefined") {
-  sumOfTwo = undefined;
+	sumOfTwo = undefined;
 }
 
 if (typeof multiply === "undefined") {
-  multiply = undefined;
+	multiply = undefined;
 }
 
 if (typeof sayHi === "undefined") {
-  sayHi = undefined;
+	sayHi = undefined;
 }
 
 if (typeof returnWhatISay === "undefined") {
-  returnWhatISay = undefined;
+	returnWhatISay = undefined;
 }
 
 if (typeof divide === "undefined") {
-  divide = undefined;
+	divide = undefined;
 }
 
 if (typeof remainder === "undefined") {
-  remainder = undefined;
+	remainder = undefined;
 }
 
 describe("greet", () => {
-  it(`sets greeting to be its old value plus the given string, with a space in the middle`, () => {
-    greet("mess");
-    expect(greeting).toBe("Hello mess");
-  });
+	it(`sets greeting to be its old value plus the given string, with a space in the middle`, () => {
+		greet("mess");
+		expect(greeting).toBe("Hello mess");
+	});
 });
 
 describe("sumOfTwo", () => {
-  it(`changes the value of the variable sum to be the sum of the two given numbers`, () => {
-    sumOfTwo(2, 4);
-    expect(sum).toEqual(6);
-  });
+	it(`changes the value of the variable sum to be the sum of the two given numbers`, () => {
+		sumOfTwo(2, 4);
+		expect(sum).toEqual(6);
+	});
 });
 
 describe("multiply", () => {
-  it(`sets prod to the product of the three given numbers`, () => {
-    multiply(2, 2, 2);
-    expect(prod).toBe(8);
-  });
+	it(`sets prod to the product of the three given numbers`, () => {
+		multiply(2, 2, 2);
+		expect(prod).toBe(8);
+	});
 });
 
 describe("returnWhatISay", () => {
-  it(`returns the given string unchanged`, () => {
-    const returnValue1 = returnWhatISay("Colin");
-    expect(returnValue1).toEqual("Colin");
-    const returnValue2 = returnWhatISay("Brian");
-    expect(returnValue2).toEqual("Brian");
-  });
+	it(`returns the given string unchanged`, () => {
+		const returnValue1 = returnWhatISay("Colin");
+		expect(returnValue1).toEqual("Colin");
+		const returnValue2 = returnWhatISay("Brian");
+		expect(returnValue2).toEqual("Brian");
+	});
 });
 
 describe("sayHi", () => {
-  it(`returns the given string with 'Hello' and a space before it, and an exclamation point after. `, () => {
-    const returnValue1 = sayHi("Colin");
-    expect(returnValue1).toEqual("Hello Colin!");
-    const returnValue2 = sayHi("Mesi!");
-    expect(returnValue2).toEqual("Hello Mesi!!");
-  });
+	it(`returns the given string with 'Hello' and a space before it, and an exclamation point after. `, () => {
+		const returnValue1 = sayHi("Colin");
+		expect(returnValue1).toEqual("Hello Colin!");
+		const returnValue2 = sayHi("Mesi!");
+		expect(returnValue2).toEqual("Hello Mesi!!");
+	});
 });
 
 describe("divide", () => {
-  it(`returns the result of dividing the first given nubmer by the second given number`, () => {
-    const returnValue1 = divide(10, 5);
-    expect(returnValue1).toEqual(2);
-    const returnValue2 = divide(15, 3);
-    expect(returnValue2).toEqual(5);
-  });
+	it(`returns the result of dividing the first given nubmer by the second given number`, () => {
+		const returnValue1 = divide(10, 5);
+		expect(returnValue1).toEqual(2);
+		const returnValue2 = divide(15, 3);
+		expect(returnValue2).toEqual(5);
+	});
 });
 
 describe("remainder", () => {
-  it(`returns the remainder of dividing the first given number by the second given number`, () => {
-    const returnValue1 = remainder(10, 3);
-    expect(returnValue1).toEqual(1);
-    const returnValue2 = remainder(28, 6);
-    expect(returnValue2).toEqual(4);
-  });
+	it(`returns the remainder of dividing the first given number by the second given number`, () => {
+		const returnValue1 = remainder(10, 3);
+		expect(returnValue1).toEqual(1);
+		const returnValue2 = remainder(28, 6);
+		expect(returnValue2).toEqual(4);
+	});
 });
-
