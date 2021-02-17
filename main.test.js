@@ -18,7 +18,8 @@ function multiply(num1, num2, num3){
 }
 
 function sayHi(name){
-  return greeting + " " + name + "!"
+  const yell = greeting + " " + name + "!"
+  return yell
 }
 
 function returnWhatISay(type){
